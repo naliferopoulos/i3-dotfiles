@@ -23,3 +23,7 @@
 ### Fonts
 - Hack Nerd Font --> https://github.com/ryanoasis/nerd-fonts
 - San Fransisco Text --> https://github.com/AppleDesignResources/SanFranciscoFont
+
+### Themes
+- GTK Theme: Adwaita-dark --> https://www.gnome-look.org/p/1014995/
+- GTK Icon Theme: Luv --> https://github.com/Nitrux/luv-icon-theme
