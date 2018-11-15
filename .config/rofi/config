@@ -1,0 +1,16 @@
+! Should be in: ~/.config/rofi/config
+
+! Import wal configuration
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+
+! Set Rofi Font
+rofi.font: Hack Nerd Font 12
+
+! Set maximum lines
+rofi.lines: 10
+
+! Set maximum columns
+rofi.columns: 1
+
+! Set width
+rofi.width: 800
