@@ -17,7 +17,7 @@
 - ZSH Theme/Plugin Manager: **OhMyZSH!** --> https://github.com/robbyrussell/oh-my-zsh
 - Syntax Highlighting: **zsh-syntax-highlighting** --> https://github.com/zsh-users/zsh-syntax-highlighting
 - Auto Suggestions: **zsh-autosuggestions** --> https://github.com/zsh-users/zsh-autosuggestions
-- ZSH Theme: **Powerlevel9K** --> https://github.com/bhilburn/powerlevel9k
+- OhMyZSH! Theme: **Powerlevel9K** --> https://github.com/bhilburn/powerlevel9k
 - LS Replacement: **colorls** --> https://github.com/athityakumar/colorls
 
 ### Fonts - Bunch of rules to make letters appear.
