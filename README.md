@@ -1,15 +1,16 @@
 ## Dotfiles (How to be this awesome when hacking [just kidding, I suck])
 
 ### Software
-- Linux Distro (Well, duh) --> https://www.kali.org
-- Tmux --> https://github.com/tmux/tmux
-- ZSH --> http://www.zsh.org
-- i3-gaps --> https://github.com/Airblader/i3
-- Polybar --> https://github.com/jaagr/polybar
-- URXVT --> https://wiki.archlinux.org/index.php/rxvt-unicode
-- Compton --> https://github.com/chjj/compton
-- Wal --> https://github.com/dylanaraps/pywal
-- ROFI --> https://github.com/DaveDavenport/rofi
+- Kernel/OS: Linux Distro (Well, duh) --> https://www.kali.org
+- Terminal Multiplexer: Tmux --> https://github.com/tmux/tmux
+- Shell: ZSH --> http://www.zsh.org
+- Window Manager: i3-gaps --> https://github.com/Airblader/i3
+- Status Bar: Polybar --> https://github.com/jaagr/polybar
+- Terminal Emulator: URXVT --> https://wiki.archlinux.org/index.php/rxvt-unicode
+- Compositor: Compton --> https://github.com/chjj/compton
+- Color Scheme Applier: Wal --> https://github.com/dylanaraps/pywal
+- Launcher: ROFI --> https://github.com/DaveDavenport/rofi
+- Notification Daemon: Dunst --> https://github.com/dunst-project/dunst
 
 ### Terminal
 - OhMyZSH! --> https://github.com/robbyrussell/oh-my-zsh
