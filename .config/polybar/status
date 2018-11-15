@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Should be in: ~/.config/polybar/status
+# Meant to be used internally by polybar to identify if certain services are up.
+
+set -e
+
+daemon=${1:?}
+state="%{F#d15e85}off%{F-}"
+cmd="$(systemctl status $daemon | grep -i running 2>/dev/null || echo '')"
+
+[[ "$cmd" ]] && state="%{F#b3bece}on%{F-}"
+
+echo "%{F#008787}${daemon}%{F-} ${state}"
+exit 0
