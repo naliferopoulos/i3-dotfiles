@@ -14,8 +14,11 @@
 
 ### Terminal
 - OhMyZSH! --> https://github.com/robbyrussell/oh-my-zsh
-- Hack Nerd Font --> https://github.com/ryanoasis/nerd-fonts
 - zsh-syntax-highlighting --> https://github.com/zsh-users/zsh-syntax-highlighting
 - zsh-autosuggestions --> https://github.com/zsh-users/zsh-autosuggestions
 - Powerlevel9K --> https://github.com/bhilburn/powerlevel9k
 - colorls --> https://github.com/athityakumar/colorls
+
+### Fonts
+- Hack Nerd Font --> https://github.com/ryanoasis/nerd-fonts
+- San Fransisco Text --> https://github.com/AppleDesignResources/SanFranciscoFont
