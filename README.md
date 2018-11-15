@@ -24,6 +24,6 @@
 - Terminal Font: **Hack Nerd Font** --> https://github.com/ryanoasis/nerd-fonts
 - Generic Font: **San Fransisco Text** --> https://github.com/AppleDesignResources/SanFranciscoFont
 
-### Themes - The stuff that requires beinging at least a little bit artistic to make.
+### Themes - The stuff that requires being at least a little bit artistic to make.
 - GTK Theme: **Adwaita-dark** --> https://www.gnome-look.org/p/1014995/
 - GTK Icon Theme: **Luv** --> https://github.com/Nitrux/luv-icon-theme
