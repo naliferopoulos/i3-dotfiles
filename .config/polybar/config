@@ -1,0 +1,231 @@
+; Should be in: ~/.config/polybar/config
+
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+; Color Theme ==============================
+; Can copy directly from Xresources #defines
+base00 = ${xrdb:color0:#222}
+base01 = ${xrdb:color1:#222}
+base02 = ${xrdb:color2:#222}
+base03 = ${xrdb:color3:#222} 
+base04 = ${xrdb:color4:#222}
+base05 = ${xrdb:color5:#222}
+base06 = ${xrdb:color6:#222}
+base07 = ${xrdb:color7:#222}
+base08 = ${xrdb:color8:#222}
+base09 = ${xrdb:color9:#222}
+base0A = ${xrdb:color10:#222}
+base0B = ${xrdb:color11:#222}
+base0C = ${xrdb:color12:#222}
+base0D = ${xrdb:color13:#222}
+base0E = ${xrdb:color14:#222}
+base0F = ${xrdb:color15:#222}
+; =========================================
+
+; Top Bar Configuration
+[bar/bar]
+width = 100%
+height = 42
+radius = 0
+padding = 1
+fixed-center = false
+bottom = false
+border-color = #00000000
+border-left-size = 10%
+border-right-size = 10%
+border-top-size = 5%
+border-bottom-size= 3%
+background = ${colors.base00}
+foreground = ${colors.base05}
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Hack Nerd Font:style=Regular:size=12;3
+font-1 = Font Awesome 5 Free:style=Regular:size=16;3
+font-2 = Font Awesome 5 Brands:style=Regular:size=16;3
+font-3 = FontAwesome:style=Regular:size=16;3
+
+modules-left = i3 spacer cpu memory
+modules-center = spotify
+modules-right = network spacer battery spacer pulseaudio
+
+; Bottom Bar Configuration 
+[bar/bottombar]
+width = 100%
+height = 42
+radius = 0
+padding = 1
+fixed-center = false
+bottom = true
+border-color = #00000000
+border-left-size = 10%
+border-right-size = 10%
+border-top-size = 3%
+border-bottom-size= 5%
+background = ${colors.base00}
+foreground = ${colors.base05}
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Hack Nerd Font:style=Regular:size=12;3
+font-1 = Font Awesome 5 Free:style=Regular:size=16;3
+font-2 = Font Awesome 5 Brands:style=Regular:size=16;3
+font-3 = FontAwesome:style=Regular:size=16;3
+
+modules-left = date
+modules-center = vpn spacer apache
+modules-right = time
+
+[module/spacer]
+type = custom/text
+content = ""
+content-foreground = ${colors.base0A}
+
+[module/vpn]
+type = custom/script
+exec = ~/.config/polybar/status openvpn@Infidel
+interval = 10
+
+[module/apache]
+type = custom/script
+exec = ~/.config/polybar/status apache2
+interval = 10
+
+[module/updates]
+type = custom/script
+exec = ~/.config/polybar/updates
+interval = 10
+
+[module/spotify]
+type=custom/script
+interval=5
+format-prefix = " "
+format = <label>
+exec = python /home/infidel/.config/polybar/plugins/polybar-spotify/spotify_status.py -f '{artist} : {song}'
+format-underline = #1db954
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+wrapping-scroll = false
+index-sort = true
+
+ws-icon-1 = "1;"
+ws-icon-2 = "2;"
+ws-icon-3 = "3;酪"
+ws-icon-4 = "7;聆"
+ws-icon-5 = "8;ﭮ"
+ws-icon-6 = "9;"
+ws-icon-0 = "10;"
+
+label-mode-foreground = ${colors.base05}
+label-mode-background = ${colors.base00}
+
+; focused = Active workspace on focused monitor
+label-focused = %icon%
+label-focused-foreground = ${colors.base09}
+label-focused-background = ${colors.base00}
+label-focused-padding = 1
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %icon%
+label-unfocused-foreground = ${colors.base05}
+label-unfocused-background = ${colors.base00}
+label-unfocused-padding = 1
+
+; urgent = Workspace with urgency hint set
+label-urgent = %icon%
+label-urgent-background = ${colors.base09}
+label-urgent-padding = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 5
+format = "%{F#edb443}%{F-} <label>"
+format-foreground = ${colors.base05}
+label = %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 5
+format = "%{F#888ca6}%{F-} <label>"
+format-foreground = ${colors.base05}
+label = %percentage_used%%
+
+[module/time]
+type = internal/date
+interval = 1
+
+time = %H:%M:%S
+label = %time%
+
+format = "%{F#888ca6}%{F-} <label>"
+format-foreground = ${colors.base05}
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = "%m/%d/%Y"
+label = %date%
+
+format = "%{F#edb443}%{F-} <label>"
+format-foreground = ${colors.base05}
+
+[module/battery]
+type = internal/battery
+
+battery = BAT0
+adapter = AC
+poll-interval = 5
+time-format = %H:%M
+format-charging = %{F#2aa889}%{F-} <label-charging>
+label-charging = %percentage%%
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%%
+label-full = %{F#2aa889}%{F-} Charged
+ramp-capacity-0 = %{F#c23127}%{F-}
+ramp-capacity-1 = %{F#c23127}%{F-}
+ramp-capacity-2 = %{F#edb443}%{F-}
+ramp-capacity-3 = %{F#edb443}%{F-}
+ramp-capacity-4 = %{F#2aa889}%{F-}
+
+[module/network]
+type = internal/network
+interface = wlan0
+interval = 1
+ping-interval = 3
+format-connected = %{F#2aa889}%{F-} <label-connected>
+label-connected = %essid%
+format-disconnected = %{F#d26937}%{F-} <label-disconnected>
+label-disconnected = "Not Connected"
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = %{F#d26937}<ramp-volume>%{F-} <label-volume>
+label-volume = %percentage%%
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+format-muted = %{F#d26937}%{F-} <label-muted>
+label-muted = Muted
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
+
