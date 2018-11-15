@@ -1,0 +1,71 @@
+! Should be in: ~/.Xresources
+
+! Rofi Configuration
+rofi.color-window: argb:c82d303b, #7c8389, #1d1f21
+rofi.color-normal: argb:31d1f21, #c4cbd4, argb:96404552, #4084d6, #f9f9f9
+rofi.color-urgent: argb:2c1d1f21, #cc6666, argb:e54b5160, #a54242, #f9f9f9
+rofi.color-active: argb:2c1d1f21, #65acff, argb:e44b5160, #4491ed, #f9f9f9
+rofi.width: 100
+rofi.height: 800
+rofi.lines: 5
+rofi.columns: 2
+rofi.font: Hack Nerd Font 14
+rofi.bw: 0
+rofi.padding: 400
+rofi.eh: 1
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+
+! X Font Configuration
+Xft.dpi: 96
+Xft.antialias: true      
+Xft.hinting: false
+Xft.rgba: rgb 
+Xft.autohint: false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+! URxvt Configuration
+URxvt.termName:   rxvt-unicode
+URxvt.scrollBar: false
+URxvt.transparent:     false
+URxvt.shading:         15
+URxvt.depth: 32
+URxvt.font:  xft:Hack Nerd Font Mono:style=Regular:pixelsize=15:antialias=true
+URxvt.boldFont: xft:Hack Nerd Font Mono:style=Regular:pixelsize=15:weight=bold:antialias=true
+URxvt.letterSpace: -1
+URxvt.perl-ext-common: eval
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.iso14755: false
+
+!! Larger history limit
+URxvt.saveLines:  1000000
+
+!! Colors:
+   URxvt.foreground: #aacccc
+   URxvt.background: #334455
+!! black
+   URxvt.color0:     #2e1f1f
+   URxvt.color8:     #bb8899
+!! red
+   URxvt.color1:     #aa0e50
+   URxvt.color9:     #bb8899
+!! green
+   URxvt.color2:     #1dcc9f
+   URxvt.color10:    #1fd9a9
+!! yellow
+   URxvt.color3:     #27c282
+   URxvt.color11:    #2cdb93
+!! blue
+   URxvt.color4:     #7182a8
+   URxvt.color12:    #8194bf
+!! magenta
+   URxvt.color5:     #aa5566
+   URxvt.color13:    #7f5aa1
+!! cyan
+   URxvt.color6:     #22ddcc
+   URxvt.color14:    #669997
+!! white
+   URxvt.color7:     #b7bbbd
+   URxvt.color15:    #d9d9d9
