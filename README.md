@@ -1,4 +1,4 @@
-## Dotfiles 
+## Dotfiles (How to be this awesome when hacking [just kidding, I suck])
 
 ### Software
 - Linux Distro (Well, duh) --> https://www.kali.org
