@@ -17,6 +17,4 @@
 - zsh-syntax-highlighting --> https://github.com/zsh-users/zsh-syntax-highlighting
 - zsh-autosuggestions --> https://github.com/zsh-users/zsh-autosuggestions
 - Powerlevel9K --> https://github.com/bhilburn/powerlevel9k
-
-
-
+- colorls --> https://github.com/athityakumar/colorls
