@@ -27,3 +27,7 @@
 ### Themes - The stuff that requires being at least a little bit artistic to make.
 - GTK Theme: **Adwaita-dark** --> https://www.gnome-look.org/p/1014995/
 - GTK Icon Theme: **Luv** --> https://github.com/Nitrux/luv-icon-theme
+
+#### If you liked this configuration and want to help me keep it updated, you can buy me some coffee 
+
+<a href="https://liberapay.com/naliferopoulos/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
