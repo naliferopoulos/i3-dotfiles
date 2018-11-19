@@ -12,6 +12,7 @@
 - Launcher: **ROFI** --> https://github.com/DaveDavenport/rofi
 - Notification Daemon: **Dunst** --> https://github.com/dunst-project/dunst
 - File Explorer: **Polo** --> https://github.com/teejee2008/polo
+- Text Editor: **neovim** --> https://github.com/neovim/neovim
 
 ### Terminal - The thing with the text that hackers use!
 - ZSH Theme/Plugin Manager: **OhMyZSH!** --> https://github.com/robbyrussell/oh-my-zsh
