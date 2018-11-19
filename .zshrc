@@ -16,7 +16,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # PowerLevel9K Settings
 # Only display the current directory in the left part of the prompt.
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir) 
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) 
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -137,6 +137,9 @@ alias tree="colorls -t"
 
 # Alias for grep with color highlighting
 alias grep="grep --color"
+
+# Alias for vim to run neovim
+alias vim="nvim"
 
 # Aliases for easy grepping
 alias -g G="| grep"
