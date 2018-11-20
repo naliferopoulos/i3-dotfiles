@@ -18,6 +18,11 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Only display the current directory in the left part of the prompt.
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) 
 
+# Swap theme to something visible in TTYs that have no powerline support.
+if [[ "$TERM" != 'linux' ]]; then
+    ZSH_THEME='gruvbox-dark'
+fi
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
