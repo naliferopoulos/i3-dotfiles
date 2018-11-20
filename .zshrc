@@ -74,7 +74,8 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
-  thefuck
+  command-not-found
+  bgnotify
 )
 
 source $ZSH/oh-my-zsh.sh
