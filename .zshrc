@@ -19,8 +19,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) 
 
 # Swap theme to something visible in TTYs that have no powerline support.
-if [[ "$TERM" != 'linux' ]]; then
-    ZSH_THEME='gruvbox-dark'
+if [[ "$TERM" != 'linux' || "$TERM" != 'xterm-256color' ]]; then
+    ZSH_THEME='bira'
 fi
 
 # Set list of themes to pick from when loading at random
@@ -69,6 +69,9 @@ fi
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Custom bgnotify timer
+bgnotify_threshold=1
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
