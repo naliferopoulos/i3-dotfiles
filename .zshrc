@@ -19,7 +19,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs) 
 
 # Swap theme to something visible in TTYs that have no powerline support.
-if [[ "$TERM" != 'linux' || "$TERM" != 'xterm-256color' ]]; then
+if [[ "$TERM" != 'xterm-256color' ]]; then
     ZSH_THEME='bira'
 fi
 
@@ -115,7 +115,7 @@ source ~/.cache/wal/colors-tty.sh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Fix scrolling 
-tty -ixon
+stty -ixon
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
