@@ -123,7 +123,8 @@ bindsym $mod+a focus parent
 # lock
 #bindsym $mod+l exec i3lock --color "#00222f"
 #bindsym $mod+l exec i3lock -i /home/infidel/Downloads/desktop-background.png
-bindsym $mod+l exec i3lock -i ~/Downloads/desktop-background.png
+bindsym $mod+l exec i3lock -i ~/Downloads/desktop-background-mountain.png
+#bindsym $mod+l exec i3lock -i ~/Downloads/lock-troll.png
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -161,6 +162,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# move between current and most recently used workspace. (MRU Scheme)
+bindsym $mod+Tab workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -223,8 +227,8 @@ exec_always setxkbmap -layout us,gr
 exec_always setxkbmap -option 'grp:alt_shift_toggle' 
 
 # Set background
-exec_always --no-startup-id ~/.fehbg 
-exec_always wal -i ~/Downloads/desktop-background.png
+#exec_always --no-startup-id ~/.fehbg 
+exec_always wal -n -i ~/Downloads/desktop-background-mountain.png
 #exec_always --no-startup-id mpv --wid=0 --loop-file=inf ~/Downloads/bg.gif
 
 # Spawn Polybar
