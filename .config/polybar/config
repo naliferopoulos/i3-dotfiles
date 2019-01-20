@@ -83,7 +83,7 @@ font-2 = Font Awesome 5 Brands:style=Regular:size=16;3
 font-3 = FontAwesome:style=Regular:size=16;3
 
 modules-left = date
-modules-center = vpn spacer apache
+modules-center = vpn spacer apache spacer ssh spacer smbd
 modules-right = time
 
 [module/spacer]
@@ -99,6 +99,16 @@ interval = 10
 [module/apache]
 type = custom/script
 exec = ~/.config/polybar/status apache2
+interval = 10
+
+[module/ssh]
+type = custom/script
+exec = ~/.config/polybar/status ssh
+interval = 10
+
+[module/smbd]
+type = custom/script
+exec = ~/.config/polybar/status smbd
 interval = 10
 
 [module/updates]
